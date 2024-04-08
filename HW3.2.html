@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3.2</title>
+</head>
+<body>
+<script>
+    var array = [];
+    for (let i = 0; i < 20; i++) {
+        var randomNumber = Math.floor(Math.random() * 100);
+        array.push(randomNumber);
+    }
+    var ch = 0;
+    var nch = 0;
+    document.write(array + "<br>");
+    for (let i = 0; i < array.length; i++) {
+        if (array[i]%2 === 0) {
+            ch = ch + array[i];
+        } else {
+            nch = nch + array[i];
+        }
+    }
+    document.write(ch + "<br>");
+    document.write(nch);
+
+</script>
+</body>
+</html>

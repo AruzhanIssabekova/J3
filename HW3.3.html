@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3.3</title>
+</head>
+<body>
+<script>
+    var array = [];
+    for (let i = 0; i < 10; i++) {
+        var randomNumber = Math.floor(Math.random() * 100);
+        array.push(randomNumber.toFixed(1));
+    }
+    var l = array[9];
+    var c = 0;
+    document.write(array + "<br>");
+    for (let i = 0; i < 9; i++) {
+        if (array[i] < l) {
+            c = c + 1;
+        }
+    }
+    document.write(c);
+
+</script>
+</body>
+</html>
